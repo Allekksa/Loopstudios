@@ -11,10 +11,12 @@
     <title>Loopstudios</title>
     <link rel="stylesheet" href="./css/normailze.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css">
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <div class="container header__container">
+      <div class="container header__container burger-menu">
         <a class="logo">
           <svg
             width="192"
@@ -50,6 +52,11 @@
             </li>
           </ul>
         </nav>
+        <button class="burger-btn btn-reset" aria-label="Открыть меню" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
       </div>
     </header>
     <main>
@@ -85,35 +92,35 @@
           </div>
           <div class="products__grid">
             <div class="product__item">
-              <img src="" alt="" class="product__image" />
+              <img src="./img/deep_earth.jpg" alt="" class="product__image" />
               <h3 class="product__title">Deep Earth</h3>
             </div>
             <div class="product__item">
-              <img src="" alt="" class="product__image" />
+              <img src="./img/night_arcade.jpg" alt="" class="product__image" />
               <h3 class="product__title">Night arcade</h3>
             </div>
             <div class="product__item">
-              <img src="" alt="" class="product__image" />
+              <img src="./img/soccer_team_vr.svg" alt="" class="product__image" />
               <h3 class="product__title">Soccer team vr</h3>
             </div>
             <div class="product__item">
-              <img src="" alt="" class="product__image" />
+              <img src="./img/the_grid.svg" alt="" class="product__image" />
               <h3 class="product__title">The grid</h3>
             </div>
             <div class="product__item">
-              <img src="" alt="" class="product__image" />
-              <h3 class="product__title">From up above vr</h3>
+              <img src="./img/from_up_above_vr.jpg" alt="" class="product__image" />
+              <h3 class="product__title">From up above&nbsp;vr</h3>
             </div>
             <div class="product__item">
-              <img src="" alt="" class="product__image" />
+              <img src="./img/pocket_borealis.jpg" alt="" class="product__image" />
               <h3 class="product__title">Pocket borealis</h3>
             </div>
             <div class="product__item">
-              <img src="" alt="" class="product__image" />
+              <img src="./img/the_curiosity.jpg" alt="" class="product__image" />
               <h3 class="product__title">The curiosity</h3>
             </div>
             <div class="product__item">
-              <img src="" alt="" class="product__image" />
+              <img src="./img/make_it_fisheye.jpg" alt="" class="product__image" />
               <h3 class="product__title">Make it fisheye</h3>
             </div>
           </div>
@@ -121,9 +128,9 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer__top">
-          <a href="" class="logo">
+      <div class="container footer__container">
+        <div class="footer__col">
+          <a href="" class="logo footer__logo">
             <svg
               width="144"
               height="24"
@@ -139,7 +146,28 @@
               />
             </svg>
           </a>
-          <ul class="socials__list">
+          <nav class="nav footer__nav">
+            <ul class="nav__list footer__list list-reset">
+              <li class="nav__item">
+                <a href="" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Careers</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Events</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Products</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Support</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__right">
+          <ul class="socials__list list-reset">
             <li class="socials__item">
               <a href="" class="socials__link">
                 <svg
@@ -207,27 +235,6 @@
               </a>
             </li>
           </ul>
-        </div>
-        <div class="footer__bottom">
-          <nav class="nav footer__nav">
-            <ul class="nav__list list-reset">
-              <li class="nav__item">
-                <a href="" class="nav__link">About</a>
-              </li>
-              <li class="nav__item">
-                <a href="" class="nav__link">Careers</a>
-              </li>
-              <li class="nav__item">
-                <a href="" class="nav__link">Events</a>
-              </li>
-              <li class="nav__item">
-                <a href="" class="nav__link">Products</a>
-              </li>
-              <li class="nav__item">
-                <a href="" class="nav__link">Support</a>
-              </li>
-            </ul>
-          </nav>
           <small class="copyright"
             >&copy;&nbsp;2021&nbsp;Loopstudios. All rights reserved.</small
           >
