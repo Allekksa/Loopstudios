@@ -16,9 +16,10 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__container">
-    
-          <a class="logo header__logo">
+      <div class="container header__container ">
+          
+          <div class="open__menu">
+<a class="logo header__logo">
             <svg
               width="192"
               height="32"
@@ -34,7 +35,7 @@
               />
             </svg>
           </a>
-          <nav class="nav header__nav">
+             <nav class="nav header__nav">
             <ul class="nav__list list-reset">
               <li class="nav__item">
                 <a href="" class="nav__link">About</a>
@@ -51,17 +52,20 @@
               <li class="nav__item">
                 <a href="" class="nav__link">Support</a>
               </li>
-            </ul><button class="menu__close btn-reset" aria-label="Close menu"  aria-expanded="false">
-            <span class="menu__close-line"></span>
-            <span class="menu__close-line"></span>
-          </button>
+            </ul>
+            
           <button class="header__burger burger btn-reset" aria-label="Open menu" aria-expanded="false">
             <span class="burger__line"></span>
             <span class="burger__line"></span>
             <span class="burger__line"></span>
           </button> 
-          </nav>  
+          </nav> 
+          </div>
           
+           <button class="menu__close btn-reset" aria-label="Close menu"  aria-expanded="false">
+            <span class="menu__close-line"></span>
+            <span class="menu__close-line"></span>
+          </button>
       
       </div>
     </header>
@@ -91,7 +95,7 @@
         </div>
       </section>
       <section class="products">
-        <div class="container">
+        <div class="container poducts__container">
           <div class="products__top">
             <h2 class="products__title title">Our creations</h2>
             <button class="products__btn btn-reset">See all</button>
@@ -106,11 +110,11 @@
               <a class="products__link title"  href="#">Night arcade</a>
             </li>
             <li class="products__item">
-              <img src="./img/soccer_team_vr.svg" alt="" class="products__image" />
+              <img src="./img/soccer_team_vr.jpg" alt="" class="products__image" />
               <a class="products__link title"  href="#">Soccer team vr</a>
             </li>
             <li class="products__item">
-              <img src="./img/the_grid.svg" alt="" class="products__image" />
+              <img src="./img/the_grid.jpg" alt="" class="products__image" />
               <a class="products__link title"  href="#">The grid</a>
             </li>
             <li class="products__item">
@@ -130,6 +134,7 @@
               <a class="products__link title"  href="#">Make it fisheye</a>
             </li>
           </ul>
+          <button class="products__btn btn-mob btn-reset">See all</button>
         </div>
       </section>
     </main>
