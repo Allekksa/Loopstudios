@@ -1,0 +1,19 @@
+.d-none {
+  display: none;
+}
+.header {
+  background-color: blueviolet;
+}
+
+.open__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+}

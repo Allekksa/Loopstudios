@@ -11,15 +11,14 @@
     <title>Loopstudios</title>
     <link rel="stylesheet" href="./css/normailze.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/media.css" />
     <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <div class="container header__container ">
-          
-          <div class="open__menu">
-<a class="logo header__logo">
+      <div class="container header__container">
+        <div class="header__menu">
+          <a class="logo header__logo">
             <svg
               width="192"
               height="32"
@@ -35,7 +34,7 @@
               />
             </svg>
           </a>
-             <nav class="nav header__nav">
+          <nav class="nav header__nav">
             <ul class="nav__list list-reset">
               <li class="nav__item">
                 <a href="" class="nav__link">About</a>
@@ -53,20 +52,27 @@
                 <a href="" class="nav__link">Support</a>
               </li>
             </ul>
-            
-          <button class="header__burger burger btn-reset" aria-label="Open menu" aria-expanded="false">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-          </button> 
-          </nav> 
-          </div>
+            <button
+              class="header__burger burger d-none btn-reset"
+              aria-label="Open menu"
+              aria-expanded="false"
+            >
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+           
+          </nav>
           
-           <button class="menu__close btn-reset" aria-label="Close menu"  aria-expanded="false">
-            <span class="menu__close-line"></span>
-            <span class="menu__close-line"></span>
-          </button>
-      
+        </div>
+        <button
+          class="burger__close d-none btn-reset"
+          aria-label="Close menu"
+          aria-expanded="false"
+        >
+          <span class="burger__close-line"></span>
+          <span class="burger__close-line"></span>
+        </button>
       </div>
     </header>
     <main>
@@ -106,35 +112,59 @@
               <a class="products__link title" href="#">Deep Earth</a>
             </li>
             <li class="products__item">
-              <img src="./img/night_arcade.jpg" alt="" class="products__image" />
-              <a class="products__link title"  href="#">Night arcade</a>
+              <img
+                src="./img/night_arcade.jpg"
+                alt=""
+                class="products__image"
+              />
+              <a class="products__link title" href="#">Night arcade</a>
             </li>
             <li class="products__item">
-              <img src="./img/soccer_team_vr.jpg" alt="" class="products__image" />
-              <a class="products__link title"  href="#">Soccer team vr</a>
+              <img
+                src="./img/soccer_team_vr.jpg"
+                alt=""
+                class="products__image"
+              />
+              <a class="products__link title" href="#">Soccer team vr</a>
             </li>
             <li class="products__item">
               <img src="./img/the_grid.jpg" alt="" class="products__image" />
-              <a class="products__link title"  href="#">The grid</a>
+              <a class="products__link title" href="#">The grid</a>
             </li>
             <li class="products__item">
-              <img src="./img/from_up_above_vr.jpg" alt="" class="products__image" />
-              <a class="products__link title"  href="#">From up above&nbsp;vr</a>
+              <img
+                src="./img/from_up_above_vr.jpg"
+                alt=""
+                class="products__image"
+              />
+              <a class="products__link title" href="#">From up above&nbsp;vr</a>
             </li>
             <div class="products__item">
-              <img src="./img/pocket_borealis.jpg" alt="" class="products__image" />
-              <a class="products__link title"  href="#">Pocket borealis</a>
+              <img
+                src="./img/pocket_borealis.jpg"
+                alt=""
+                class="products__image"
+              />
+              <a class="products__link title" href="#">Pocket borealis</a>
             </div>
             <li class="products__item">
-              <img src="./img/the_curiosity.jpg" alt="" class="products_image" />
-              <a class="products__link title"  href="#">The curiosity</a>
+              <img
+                src="./img/the_curiosity.jpg"
+                alt=""
+                class="products_image"
+              />
+              <a class="products__link title" href="#">The curiosity</a>
             </li>
             <li class="products__item">
-              <img src="./img/make_it_fisheye.jpg" alt="" class="products__image" />
-              <a class="products__link title"  href="#">Make it fisheye</a>
+              <img
+                src="./img/make_it_fisheye.jpg"
+                alt=""
+                class="products__image"
+              />
+              <a class="products__link title" href="#">Make it fisheye</a>
             </li>
           </ul>
-          <button class="products__btn btn-mob btn-reset">See all</button>
+          <button class="products__btn products_btn--bottom btn-reset">See all</button>
         </div>
       </section>
     </main>
@@ -246,9 +276,7 @@
               </a>
             </li>
           </ul>
-          <small class="copyright"
-            >&copy;&nbsp;2021&nbsp;Loopstudios. All rights reserved.</small
-          >
+          <small class="copyright">&copy;&nbsp;2021&nbsp;Loopstudios. All rights reserved.</small>
         </div>
       </div>
     </footer>
