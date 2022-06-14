@@ -63,16 +63,6 @@ body {
   list-style: none;
 }
 
-.d-none {
-  display: none;
-}
-
-.close--menu {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 .title {
   margin: 0;
   font-weight: 300;
@@ -92,18 +82,16 @@ body {
   padding: 64px 0;
 }
 
-/* .header__container {
-  transition: 0.3s background-color ease-in-out;
-} */
-
-.header__menu {
-  display: flex;
-  justify-content: space-between;
+.menu--visible {
+  height: 100vh;
+  background-color: #000000;
+  transition: 0.3s all ease-in-out;
 }
 
-.header__burger-menu {
-  flex-direction: column;
-  justify-content: start;
+.burger-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo svg {
@@ -123,7 +111,6 @@ body {
   align-items: center;
 }
 
-
 .nav__item:not(:last-child) {
   margin-right: 32px;
 }
@@ -136,7 +123,6 @@ body {
   color: var(--color-light);
   position: relative;
   padding-bottom: 8px;
- 
 }
 
 .nav__link::before {
@@ -151,6 +137,7 @@ body {
   background-color: #fff;
   transition: 0.3s all ease-in-out;
 }
+
 .nav__link:hover:before {
   opacity: 1;
   transition: 0.3s all ease-in-out;
@@ -159,44 +146,63 @@ body {
 .burger {
   cursor: url("../img/pointer.svg"), auto;
   width: 24px;
-  height: 24px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 16px;
+  position: relative;
+  display: none;
 }
 
-.burger__line {
-  display: block;
+.burger::before,
+.burger::after {
+  content: "";
   width: 100%;
   height: 2px;
+  position: absolute;
+  left: 0;
   background-color: #ffffff;
 }
 
-.burger__line:not(:last-child) {
-  margin-bottom: 5px;
+.burger::before {
+  top: 0;
 }
 
-.burger__close {
+.burger::after {
+  bottom: 0;
+}
+
+.burger__line {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-close {
   cursor: url(../img/pointer.svg), auto;
   width: 20px;
   height: 20px;
   position: relative;
-  padding-top: 10px;
+  display: none;
 }
 
-.burger__close-line {
+.burger-close-line {
   position: absolute;
-  display: block;
+  display: inline-block;
+  left: 0;
+  top: 50%;
   width: 24px;
   height: 2px;
   background-color: #ffffff;
 }
 
-.burger__close-line:first-child {
+.burger-close-line:first-child {
   transform: rotate(45deg);
 }
 
-.burger__close-line:last-child {
+.burger-close-line:last-child {
   transform: rotate(-45deg);
 }
 

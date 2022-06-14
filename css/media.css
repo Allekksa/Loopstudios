@@ -1,48 +1,40 @@
 @media (max-width: 1024px) {
+  .container {
+    padding: 0 24px;
+  }
+
   .header__container {
-    padding-left: 24px;
-    padding-right: 24px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .header {
     padding: 40px 0;
   }
 
+  .burger-menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .header__logo {
-    /* margin-bottom: 160px; */
     width: 144px;
     height: 24px;
   }
 
-  .open--burger-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    background-color: var(--color-dark);
-    padding: 32px 24px;
-    display: flex;
-    justify-content: space-between;
-   
+  .header__nav {
+    margin-top: 160px;
+    display: none;
   }
 
   .nav__list {
-    display: none;
-   
+    flex-direction: column;
+    align-items: flex-start;
   }
   .nav__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 24px;
-  }
-
-  .nav__list--burger {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .nav__link {
@@ -53,9 +45,12 @@
     font-family: "JosefinSans";
   }
 
+  .nav__link::before {
+    display: none;
+  }
+
   .burger {
-    display: flex;
- 
+    display: block;
   }
 
   .products__list {
