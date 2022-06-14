@@ -92,6 +92,10 @@ body {
   padding: 64px 0;
 }
 
+.header__container {
+  transition: 0.3s all ease-in-out;
+}
+
 .header__menu {
   display: flex;
   justify-content: space-between;
@@ -131,7 +135,7 @@ body {
   color: var(--color-light);
   position: relative;
   padding-bottom: 8px;
-  transition: 0.3s all ease-in-out;
+ 
 }
 
 .nav__link::before {
@@ -173,6 +177,7 @@ body {
   width: 20px;
   height: 20px;
   position: relative;
+  padding-top: 10px;
 }
 
 .burger__close-line {
