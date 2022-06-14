@@ -92,9 +92,9 @@ body {
   padding: 64px 0;
 }
 
-.header__container {
-  transition: 0.3s all ease-in-out;
-}
+/* .header__container {
+  transition: 0.3s background-color ease-in-out;
+} */
 
 .header__menu {
   display: flex;
@@ -122,6 +122,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 
 .nav__item:not(:last-child) {
   margin-right: 32px;
@@ -159,6 +160,9 @@ body {
   cursor: url("../img/pointer.svg"), auto;
   width: 24px;
   height: 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .burger__line {

@@ -22,9 +22,10 @@
     height: 100%;
     z-index: 1000;
     background-color: var(--color-dark);
-    padding: 40px 24px;
+    padding: 32px 24px;
     display: flex;
     justify-content: space-between;
+   
   }
 
   .nav__list {
@@ -54,9 +55,7 @@
 
   .burger {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+ 
   }
 
   .products__list {
