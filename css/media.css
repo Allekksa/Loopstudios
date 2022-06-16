@@ -26,6 +26,7 @@
   .header__nav {
     margin-top: 160px;
     display: none;
+    transition: 0.3s all ease-in-out;
   }
 
   .nav__list {
@@ -53,7 +54,7 @@
   .nav--active {
     display: flex;
     }
-    
+
   .burger {
     display: block;
   }
