@@ -63,6 +63,10 @@ body {
   list-style: none;
 }
 
+.flex {
+  display: flex;
+}
+
 .title {
   margin: 0;
   font-weight: 300;
@@ -105,6 +109,8 @@ body {
   width: 192px;
   height: 32px;
 }
+
+
 
 .nav__list {
   display: flex;
@@ -151,6 +157,7 @@ body {
   display: none;
 }
 
+
 .burger::before,
 .burger::after {
   content: "";
@@ -159,15 +166,34 @@ body {
   position: absolute;
   left: 0;
   background-color: #ffffff;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
+
 }
 
 .burger::before {
   top: 0;
+
 }
 
 .burger::after {
   bottom: 0;
 }
+
+.burger--active .burger__line {
+  opacity: 0;
+}
+
+.burger--active::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.burger--active::after {
+  top: 50%;
+  bottom: auto;
+  transform: rotate(-45deg);
+}
+
 
 .burger__line {
   display: inline-block;
@@ -178,32 +204,16 @@ body {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  transition: opacity 0.3s ease-in-out;
 }
 
-.burger-close {
-  cursor: url(../img/pointer.svg), auto;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  display: none;
-}
-
-.burger-close-line {
-  position: absolute;
-  display: inline-block;
-  left: 0;
-  top: 50%;
-  width: 24px;
-  height: 2px;
-  background-color: #ffffff;
-}
 
 .burger-close-line:first-child {
   transform: rotate(45deg);
 }
 
-.burger-close-line:last-child {
-  transform: rotate(-45deg);
+.stop-scroll {
+  overflow: hidden;
 }
 
 .hero {
